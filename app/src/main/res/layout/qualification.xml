@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QualificationFragment"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qualification"
+        android:textColor="#FF69B4"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tvqualification"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvqualification"
+        android:layout_weight="1"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF69B4"
+        android:text="Add"
+        android:layout_gravity="center"
+        android:id="@+id/btnAddqualification"
+        android:layout_marginTop="10dp">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF69B4"
+        android:text="Save and Continue"
+        android:id="@+id/btnSavequali"
+        android:layout_marginTop="25sp">
+
+    </Button>
+</LinearLayout>
+</layout>

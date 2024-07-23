@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skill Name"
+        android:textSize="25sp"
+        android:textColor="#3131AF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/tvskillname"
+        android:textColor="#3131AF"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="25sp"
+        android:textColor="#3131AF"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/tvskilldesc"
+        android:layout_marginLeft="10dp"
+        android:textColor="#3131AF"
+        android:textStyle="italic"/>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CurricularFragment">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Co-Curricular Activities"
+      android:textColor="#FF69B4"
+      android:textSize="35sp"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:id="@+id/tvCoCurricular"
+      android:layout_marginTop="30dp"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:id="@+id/rvcurricular"/>
+
+  <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF69B4"
+        android:text="+ Add"
+      android:id="@+id/btnAddcurricular"
+        android:layout_marginTop="30dp">
+
+    </Button>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:backgroundTint="#FF69B4"
+      android:text="Save and Continue"
+      android:layout_marginTop="30dp"
+      android:id="@+id/btnSave1">
+
+  </Button>
+
+
+</LinearLayout>
+</layout>

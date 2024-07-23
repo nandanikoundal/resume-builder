@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navvfile"
+    app:startDestination="@id/createviewfragment">
+    <fragment
+        android:id="@+id/personalnfoFragment"
+        android:name="com.sk.resumemaker.PersonalInfoFragment"
+        android:label="personalinfofragment"
+        tools:layout="@layout/personalinfofragment" >
+        <action
+            android:id="@+id/action_personalnfoFragment_to_qualification"
+            app:destination="@id/qualification" />
+    </fragment>
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="com.sk.resumemaker.ExperienceFragment"
+        android:label="experiencefragment"
+        tools:layout="@layout/experiencefragment" >
+      <action
+            android:id="@+id/action_experienceFragment_to_CurricularActivity"
+            app:destination="@id/CurricularActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/createviewfragment"
+        android:name="com.sk.resumemaker.createviewfragment"
+        android:label="createviewfragment"
+        tools:layout="@layout/createviewfragment">
+        <action
+            android:id="@+id/action_createviewfragment_to_personalnfoFragment"
+            app:destination="@id/personalnfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qualification"
+        android:name="com.sk.resumemaker.QualificationFragment"
+        android:label="qualification"
+        tools:layout="@layout/qualification">
+        <action
+            android:id="@+id/action_qualification_to_experienceFragment"
+            app:destination="@id/experienceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CurricularActivity"
+        android:name="com.sk.resumemaker.CurricularFragment"
+        android:label="curricular_activities"
+        tools:layout="@layout/curricular_activities">
+        <action
+            android:id="@+id/action_CurricularActivity_to_skills"
+            app:destination="@id/skills" />
+    </fragment>
+    <fragment
+        android:id="@+id/skills"
+        android:name="com.sk.resumemaker.Skills"
+        android:label="Skills"
+        tools:layout="@layout/fragment_skills">
+        <action
+            android:id="@+id/action_skills_to_referenceFragment"
+            app:destination="@id/referenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/referenceFragment"
+        android:name="com.sk.resumemaker.ReferenceFragment"
+        android:label="ReferenceFragment"
+        tools:layout="@layout/fragment_reference">
+        <action
+            android:id="@+id/action_referenceFragment_to_createviewfragment"
+            app:destination="@id/createviewfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resumeListFragment"
+        android:name="com.sk.resumemaker.ResumeListFragment"
+        android:label="ResumeListFragment"
+        tools:layout="@layout/fragment_resume_list"/>
+    <fragment
+        android:id="@+id/viewResumeFragment"
+        android:name="com.sk.resumemaker.ViewResumeFragment"
+        android:label="Resume"
+        tools:layout="@layout/fragment_view_resume"/>
+
+
+</navigation>

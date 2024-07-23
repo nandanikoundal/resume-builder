@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#3131AF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvtitlecurr">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="#2D4793"
+        android:id="@+id/etTitle"
+        android:layout_marginLeft="10sp">
+
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content"
+        android:textColor="#3131AF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvContent">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="#2D4793"
+        android:id="@+id/etContent"
+        android:layout_marginLeft="10sp">
+
+    </EditText>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FF69B4"
+        android:text="Add"
+        android:layout_gravity="center"
+        android:layout_marginTop="25sp"
+        android:id="@+id/btnAdd1">
+    </Button>
+
+
+
+</LinearLayout>
+</layout>
